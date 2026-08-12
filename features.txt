@@ -1,0 +1,80 @@
+Zuno v1.2 robot-এর features:
+
+- ESP32 WROOM based modular firmware
+- SH1106 128x64 OLED animated robot face
+- Face expressions:
+  - Normal
+  - Happy
+  - Angry
+  - Sad
+  - Love
+  - Surprise
+  - Sleep
+  - Blink
+  - Look Around
+- Smooth blink animation
+- Smooth eye movement
+- Idle look-around animation
+- Random face expression every 30 seconds
+- Obstacle দেখলে Angry face
+- Low battery হলে Sleep face
+- L298N motor driver support
+- 2 DC motor control
+- Robot modes:
+  - Still Mode
+  - Manual Mode
+  - Self Driving Mode
+  - Game Mode
+- Web dashboard থেকে manual control
+- Forward, backward, left, right, stop control
+- HC-SR04 ultrasonic obstacle detection
+- SG90 servo scan
+- Self-driving obstacle avoidance
+- Smart path selection
+- Recovery mode
+- DHT22 temperature reading
+- DHT22 humidity reading
+- Battery voltage monitoring
+- Battery percentage calculation
+- Low battery protection
+- Battery 20% বা কম হলে motor stop
+- OLED battery icon
+- WiFi Access Point mode
+- Mobile browser dashboard
+- Dashboard address: `http://192.168.4.1/`
+- Live AJAX status update
+- Dashboard status:
+  - Robot mode
+  - Face status
+  - Motor status
+  - Self-drive status
+  - Distance
+  - Temperature
+  - Humidity
+  - Battery percentage
+  - Battery voltage
+  - WiFi status
+  - Game status
+- LittleFS based HTML/CSS/JS storage
+- OLED game engine
+- Tic Tac Toe game
+- Catch Me game
+- Web dashboard থেকে game control
+- Active buzzer support
+- Buzzer sounds:
+  - Startup
+  - Happy
+  - Angry
+  - Obstacle
+  - Battery low
+  - Game win
+  - Game lose
+- `millis()` based scheduler
+- No blocking delay except boot logo
+- Memory optimized code
+- No Arduino `String` class
+- Procedural OLED graphics
+- No stored animation frames
+- Compact 10-file firmware structure
+- Wiring guide included
+- Circuit diagram PDF included

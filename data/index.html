@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Zuno v1.2</title>
+  <link rel="stylesheet" href="/app.css">
+</head>
+<body>
+  <main class="shell">
+    <section class="top">
+      <div>
+        <h1>Zuno v1.2</h1>
+        <p id="statusLine">Connecting...</p>
+      </div>
+      <div class="battery"><span id="battery">--%</span><small id="voltage">--V</small></div>
+    </section>
+
+    <section class="grid stats">
+      <article><span>Mode</span><strong id="mode">--</strong></article>
+      <article><span>Face</span><strong id="face">--</strong></article>
+      <article><span>Distance</span><strong id="distance">--</strong></article>
+      <article><span>Motor</span><strong id="motor">--</strong></article>
+      <article><span>Temp</span><strong id="temp">--</strong></article>
+      <article><span>Humidity</span><strong id="humidity">--</strong></article>
+    </section>
+
+    <section class="panel">
+      <h2>Mode</h2>
+      <div class="row">
+        <button data-post="/api/mode/still">Still</button>
+        <button data-post="/api/mode/manual">Manual</button>
+        <button data-post="/api/mode/self">Self Driving</button>
+      </div>
+    </section>
+
+    <section class="panel control">
+      <h2>Manual Control</h2>
+      <div class="pad">
+        <button data-post="/api/manual/forward">&#9650;</button>
+        <button data-post="/api/manual/left">&#9664;</button>
+        <button class="stop" data-post="/api/manual/stop">&#9632;</button>
+        <button data-post="/api/manual/right">&#9654;</button>
+        <button data-post="/api/manual/backward">&#9660;</button>
+      </div>
+    </section>
+
+    <section class="panel">
+      <h2>Faces</h2>
+      <div class="chips">
+        <button data-post="/api/face/normal">Normal</button>
+        <button data-post="/api/face/happy">Happy</button>
+        <button data-post="/api/face/angry">Angry</button>
+        <button data-post="/api/face/sad">Sad</button>
+        <button data-post="/api/face/love">Love</button>
+        <button data-post="/api/face/surprise">Surprise</button>
+        <button data-post="/api/face/sleep">Sleep</button>
+      </div>
+    </section>
+
+    <section class="panel">
+      <h2>Games</h2>
+      <div class="row">
+        <button data-post="/api/game/tictactoe">Tic Tac Toe</button>
+        <button data-post="/api/game/catch">Catch Me</button>
+        <button data-post="/api/game/stop">Stop Game</button>
+      </div>
+      <p class="game" id="game">None</p>
+      <div class="ttt">
+        <button data-post="/api/game/ttt/0">1</button><button data-post="/api/game/ttt/1">2</button><button data-post="/api/game/ttt/2">3</button>
+        <button data-post="/api/game/ttt/3">4</button><button data-post="/api/game/ttt/4">5</button><button data-post="/api/game/ttt/5">6</button>
+        <button data-post="/api/game/ttt/6">7</button><button data-post="/api/game/ttt/7">8</button><button data-post="/api/game/ttt/8">9</button>
+      </div>
+      <div class="row">
+        <button data-post="/api/game/ttt/play">Play X</button>
+        <button data-post="/api/game/ttt/reset">Reset</button>
+      </div>
+      <div class="row">
+        <button data-post="/api/game/catch/up">Up</button>
+        <button data-post="/api/game/catch/left">Left</button>
+        <button data-post="/api/game/catch/right">Right</button>
+        <button data-post="/api/game/catch/down">Down</button>
+      </div>
+    </section>
+  </main>
+  <script src="/app.js"></script>
+</body>
+</html>
